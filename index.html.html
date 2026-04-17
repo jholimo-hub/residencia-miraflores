@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Residencia Estudiantil Miraflores - Arequipa</title>
+  <meta name="description" content="Residencia estudiantil en Miraflores, Arequipa. 5 habitaciones, 3 baños, Wi‑Fi rápido, cocina equipada y lavandería. Servicios incluidos (agua, luz e internet)." />
+  <style>
+    :root{--brand:#0e5aa7;--brand2:#0b4a88;--bg:#f7f8fb;--text:#0f172a;--muted:#64748b;--card:#ffffff;--border:#e5e7eb;}
+    *{box-sizing:border-box}
+    body{font-family:Arial, Helvetica, sans-serif;margin:0;color:var(--text);background:var(--bg);}
+    a{color:inherit}
+    header{position:relative;isolation:isolate;border-bottom:1px solid var(--border);}
+    header::before{content:"";position:absolute;inset:0;background:url('assets/banner.jpg') center/cover no-repeat;filter:saturate(1.05) contrast(1.02);z-index:-2;}
+    header::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(15,23,42,.26) 0%, rgba(15,23,42,.66) 72%);z-index:-1;}
+    .hero{max-width:1120px;margin:0 auto;padding:44px 18px 24px;color:#fff;}
+    .brand{display:inline-flex;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:10px 12px;border-radius:14px;backdrop-filter:blur(6px);font-weight:900;}
+    h1{margin:14px 0 10px;font-size:36px;line-height:1.15;}
+    .subtitle{margin:0;color:rgba(255,255,255,.92);max-width:980px;line-height:1.6;}
+    .hero-row{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+    .pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:8px 10px;border-radius:999px;font-size:13px;color:#fff;}
+    .container{max-width:1120px;margin:0 auto;padding:22px 18px;}
+    h2{margin:0 0 10px;font-size:22px;}
+    .muted{color:var(--muted);}
+    .grid2{display:grid;grid-template-columns:1fr;gap:14px;}
+    @media(min-width:860px){.grid2{grid-template-columns:repeat(4,1fr);}}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+    @media(min-width:860px){.grid{grid-template-columns:repeat(3,1fr);}}
+    .two-col{display:grid;grid-template-columns:1fr;gap:14px;}
+    @media(min-width:860px){.two-col{grid-template-columns:1fr 1fr;}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;box-shadow:0 1px 0 rgba(0,0,0,.03);}
+    .badge{display:inline-block;background:#eaf3ff;color:var(--brand);padding:4px 8px;border-radius:8px;font-size:12px;font-weight:800;}
+    .price{font-size:22px;color:var(--brand);font-weight:900;margin:10px 0 0;}
+    .section-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:10px;}
+    .sec-ico{width:56px;height:56px;border-radius:14px;border:1px solid var(--border);background:#fff;display:grid;place-items:center;flex:0 0 auto;box-shadow:0 1px 0 rgba(0,0,0,.03);}
+    .sec-ico svg{width:30px;height:30px;fill:var(--brand)}
+    .map-wrap{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#fff;}
+    .map-wrap iframe{width:100%;height:320px;border:0;display:block;}
+    .map-note{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.4}
+    .map-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .map-btn{display:inline-block;background:#fff;border:1px solid var(--border);padding:10px 12px;border-radius:12px;text-decoration:none;font-weight:800;color:#0f172a}
+    .map-btn:hover{border-color:#cbd5e1}
+    form input, form select, form textarea{width:100%;padding:10px;margin:6px 0;border:1px solid #d1d5db;border-radius:10px;background:#fff;}
+    form label{font-size:12px;color:var(--muted);font-weight:800;}
+    .btn{display:inline-block;background:var(--brand);color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:900;border:0;cursor:pointer;}
+    .btn:hover{background:var(--brand2)}
+    .hr{height:1px;background:var(--border);border:0;margin:14px 0;}
+    .form-note{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:12px;padding:12px 12px;color:#334155;margin:6px 0 12px;}
+    .check{display:flex;gap:10px;align-items:flex-start;margin-top:8px;padding:10px 10px;border:1px solid var(--border);border-radius:12px;background:#fff;}
+    .check input{margin-top:3px;}
+    .check span{font-size:12px;line-height:1.5;color:#334155;}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+    @media(min-width:860px){.gallery{grid-template-columns:repeat(3,1fr);}}
+    .ph{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:#fff;aspect-ratio:1/1;}
+    .ph img{width:100%;height:100%;object-fit:cover;display:block;}
+    .ph button{position:absolute;inset:0;border:0;background:transparent;cursor:pointer;}
+    .ph .cap{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.45);color:#fff;padding:6px 10px;border-radius:10px;font-size:12px;}
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:center;justify-content:center;padding:18px;z-index:1000;}
+    .modal.open{display:flex;}
+    .modal-inner{max-width:980px;width:100%;}
+    .modal-inner img{width:100%;max-height:86vh;object-fit:contain;border-radius:14px;background:#111;}
+    .modal-close{position:fixed;top:16px;right:16px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;padding:10px 12px;border-radius:12px;cursor:pointer;font-weight:900;}
+    .fine{font-size:12px;color:var(--muted);line-height:1.5}
+  </style>
+</head>
+<body>
+<header>
+  <div class="hero">
+    <div class="brand">Residencia Estudiantil Miraflores - Arequipa</div>
+    <h1>Tu mejor base para la vida universitaria</h1>
+    <p class="subtitle"><b>Apertura:</b> primera quincena de <b>agosto 2026</b>. Un lugar diseñado para <b>estudiar, descansar y rendir</b>: ambiente tranquilo, reglas claras y convivencia ordenada.</p>
+    <div class="hero-row">
+      <span class="pill">5 habitaciones</span>
+      <span class="pill">3 baños</span>
+      <span class="pill">Servicios incluidos</span>
+      <span class="pill">Cocina + lavandería</span>
+      <span class="pill">Limpieza semanal áreas comunes</span>
+    </div>
+  </div>
+</header>
+
+<section class="container" id="porque">
+  <div class="section-head">
+    <div class="sec-ico" aria-hidden="true"><svg viewBox='0 0 24 24'><path d='M16 11c1.66 0 3-1.34 3-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.93 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z'/></svg></div>
+    <div>
+      <h2>¿Por qué elegirnos?</h2>
+      <p class="muted">Porque aquí lo importante es estudiar, descansar y avanzar — y eso se nota desde el primer día.</p>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card"><span class="badge">Enfoque académico</span><p><b>Ambiente de estudio</b> con reglas claras, horarios y convivencia ordenada.</p></div>
+    <div class="card"><span class="badge">Gastos simples</span><p><b>Servicios incluidos</b> (agua, luz e internet). Presupuesto mensual predecible.</p></div>
+    <div class="card"><span class="badge">Convivencia clara</span><p><b>Manual de Convivencia</b> y <b>visitas registradas</b> (para mantener el orden).</p></div>
+    <div class="card"><span class="badge">Ubicación práctica</span><p>Servicios cerca y rutas accesibles: menos traslados, más tiempo útil.</p></div>
+  </div>
+</section>
+
+<section class="container" id="ubicacion-zona">
+  <div class="two-col">
+    <div class="card">
+      <div class="section-head">
+        <div class="sec-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2c-3.86 0-7 3.14-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7z"/></svg></div>
+        <div><h2>Ubicación</h2><p class="muted">Miraflores, Arequipa – Calle Moquegua (referencia).</p></div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Calle%20Moquegua%2C%20Miraflores%2C%20Arequipa%2C%20Per%C3%BA&output=embed" title="Mapa - Calle Moquegua, Miraflores, Arequipa"></iframe>
+      </div>
+      <div class="map-actions">
+        <a class="map-btn" href="https://www.google.com/maps?q=Calle%20Moquegua%2C%20Miraflores%2C%20Arequipa%2C%20Per%C3%BA" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+      <div class="map-note">*Mostramos una referencia general por seguridad. La ubicación exacta se confirma durante el proceso de admisión.</div>
+    </div>
+
+    <div class="card">
+      <div class="section-head">
+        <div class="sec-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16 14h9.69c.75 0 1.4-.41 1.74-1.03L21 7H6.21L5.27 5H2v2h2l3.6 7.59-1.35 2.44C5.52 18.37 6.48 20 8 20h12v-2H8l1.16-2z"/></svg></div>
+        <div><h2>Sobre la zona</h2><p class="muted">Comodidad diaria + puntos clave cerca.</p></div>
+      </div>
+      <ul>
+        <li><b>2 cuadras</b> del <b>Parque San Antonio</b> y <b>3 cuadras</b> del <b>Parque Mayta Cápac</b>.</li>
+        <li><b>1½ cuadra</b> de la <b>Comisaría</b> y del <b>Seguro Social</b> de Miraflores.</li>
+        <li><b>15 min</b> del <b>Hospital Goyeneche</b> y <b>5 min</b> del <b>Instituto Montessori</b>.</li>
+        <li><b>25 min</b> caminando a la <b>Universidad Católica San Pablo (UCSP)</b>.</li>
+        <li><b>15 min</b> caminando a la <b>Universidad Nacional de San Agustín (UNSA)</b>.</li>
+        <li><b>15 min</b> caminando al <b>Centro Histórico</b>.</li>
+        <li>Cerca a <b>gimnasios</b> y a <b>1 cuadra</b> de la <b>Piscina Municipal</b>.</li>
+        <li>A <b>2 cuadras</b> del <b>Mercado San Antonio</b> y supermercados <b>MAS</b>.</li>
+        <li>Calle renovada por la Municipalidad: <b>adoquinado nuevo</b>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="planes">
+  <div class="section-head">
+    <div class="sec-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"/></svg></div>
+    <div><h2>Planes y precios</h2><p class="muted">Tres opciones. Cupos por tipo de habitación claramente definidos.</p></div>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="badge">Estándar (2 habitaciones)</span><h3>Habitación • Baño compartido</h3><p class="price">S/ 600 / mes</p><p class="fine"><b>Pago semestre (5 meses):</b> 10% dscto → <b>S/ 2700</b></p></div>
+    <div class="card"><span class="badge">Grande (2 habitaciones)</span><h3>Habitación amplia • Baño compartido</h3><p class="price">S/ 700 / mes</p><p class="fine"><b>Pago semestre (5 meses):</b> 10% dscto → <b>S/ 3150</b></p></div>
+    <div class="card"><span class="badge">Premium (1 habitación)</span><h3>Habitación premium • <b>Baño exclusivo</b></h3><p class="price">S/ 750 / mes</p><p class="fine"><b>Pago semestre (5 meses):</b> 10% dscto → <b>S/ 3375</b></p><hr class="hr"><p class="fine"><b>Para todos los planes:</b> Incluye: agua, luz e internet • cocina equipada • lavandería • limpieza semanal de áreas comunes • visitas registradas (solo día)</p></div>
+  </div>
+</section>
+
+<section class="container" id="lista-espera">
+  <div class="section-head">
+    <div class="sec-ico" aria-hidden="true"><svg viewBox='0 0 24 24'><path d='M16 11c1.66 0 3-1.34 3-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.93 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z'/></svg></div>
+    <div><h2>Unirse a la lista de espera</h2><p class="muted">Déjanos tus datos. Te contactaremos cuando abramos admisiones.</p></div>
+  </div>
+  <div class="card">
+    <div class="form-note"><b>Importante:</b> este formulario no confirma una reserva. Solo registra tu interés para contactarte cuando abramos admisiones.</div>
+    <hr class="hr">
+    <form action="https://script.google.com/macros/s/AKfycby6KoEF1ktdwwKRNfi6x26E1nb3yhGgcsBsYZoedq4LQ2rqdNnZQ8lD_YEcpIH_urk70Q/exec" method="post">
+      <label>Nombre y apellido</label><input type="text" name="nombre" required>
+      <label>Teléfono</label><input type="tel" name="telefono" required>
+      <label>Correo electrónico</label><input type="email" name="correo" required>
+      <label>Universidad / Instituto</label>
+      <select name="universidad" required><option value="UNSA">UNSA</option><option value="UCSP">UCSP</option><option value="Montessori">Instituto Superior Montessori</option><option value="Otra">Otra</option></select>
+      <label>Carrera / Facultad</label><input type="text" name="carrera_facultad" required>
+      <label>¿De qué ciudad vienes?</label><input type="text" name="ciudad_origen" required>
+      <label>Documento (DNI/CE/Pasaporte)</label><input type="text" name="documento" required>
+      <label>Fecha estimada de ingreso</label><input type="date" name="ingreso" required>
+      <label>Plan de preferencia</label>
+      <select name="plan" required><option value="Estandar">Estándar (S/600)</option><option value="Grande">Grande (S/700)</option><option value="Premium">Premium (S/750)</option></select>
+      <label>Comentario (opcional)</label><textarea name="comentarios" rows="4"></textarea>
+      <div class="check"><input type="checkbox" name="consentimiento" required><span>Acepto ser contactado con información de admisión, visitas y disponibilidad. Entiendo que este registro es una lista de espera y no una reserva.</span></div>
+      <button class="btn" type="submit" style="margin-top:10px">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<section class="container" id="galeria">
+  <h2>Galería (avance de obra)</h2>
+  <div class="gallery">
+    <div class="ph" data-src="assets/area-comun-2.jpg" data-alt="Área común"><img src="assets/area-comun-2.jpg" alt="Área común" loading="lazy"><button aria-label="Ver"></button><div class="cap">Área común</div></div>
+    <div class="ph" data-src="assets/cuarto-ventana.jpg" data-alt="Habitación"><img src="assets/cuarto-ventana.jpg" alt="Habitación" loading="lazy"><button aria-label="Ver"></button><div class="cap">Habitación</div></div>
+    <div class="ph" data-src="assets/cuarto-ventana-2.jpg" data-alt="Habitación"><img src="assets/cuarto-ventana-2.jpg" alt="Habitación" loading="lazy"><button aria-label="Ver"></button><div class="cap">Habitación</div></div>
+    <div class="ph" data-src="assets/cuarto-sin-ventana.jpg" data-alt="Habitación"><img src="assets/cuarto-sin-ventana.jpg" alt="Habitación" loading="lazy"><button aria-label="Ver"></button><div class="cap">Habitación</div></div>
+    <div class="ph" data-src="assets/cuarto-sin-ventana-2.jpg" data-alt="Habitación"><img src="assets/cuarto-sin-ventana-2.jpg" alt="Habitación" loading="lazy"><button aria-label="Ver"></button><div class="cap">Habitación</div></div>
+    <div class="ph" data-src="assets/cuarto-largo.jpg" data-alt="Habitación"><img src="assets/cuarto-largo.jpg" alt="Habitación" loading="lazy"><button aria-label="Ver"></button><div class="cap">Habitación</div></div>
+    <div class="ph" data-src="assets/bano.jpg" data-alt="Baño"><img src="assets/bano.jpg" alt="Baño" loading="lazy"><button aria-label="Ver"></button><div class="cap">Baño</div></div>
+  </div>
+</section>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <button class="modal-close" id="modalClose" aria-label="Cerrar">✕ Cerrar</button>
+  <div class="modal-inner"><img id="modalImg" src="" alt=""></div>
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modalImg');
+  const closeBtn = document.getElementById('modalClose');
+  document.querySelectorAll('.ph').forEach(ph => {
+    ph.addEventListener('click', () => {
+      modalImg.src = ph.getAttribute('data-src');
+      modalImg.alt = ph.getAttribute('data-alt') || 'Foto';
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden','false');
+    });
+  });
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    modalImg.src='';
+  }
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => { if(e.target===modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if(e.key==='Escape') closeModal(); });
+</script>
+
+</body>
+</html>
